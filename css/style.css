@@ -479,6 +479,7 @@ nav ul li a {
     font-family: 'appetite-italic';
     font-size: 54px;
     color: #41231e;
+    margin-top: 5%;
 }
 .brief-description {
     display: block;
@@ -530,9 +531,11 @@ width: 36px;
 height: 36px;
 margin-top: -14px !important;
 margin-left: -18px !important;
-background: url(../img/slider-bulet.png);
+background: url(../img/slider-bulet.png) 50% 50% no-repeat, #FDCD00;
+border: 1px solid #F3F3F3;
 opacity: 1;
 outline: 0;
+border-radius: 50%;
 }
 .slider .tooltip {
 display: block;
@@ -637,7 +640,7 @@ display: none;
     margin-bottom: 3%;
 }
 .slider__box {
-    margin-bottom: 8%;
+    margin-bottom: 6%;
 }
 .adaptive__panel {
   display: none;
