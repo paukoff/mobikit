@@ -182,7 +182,7 @@
 
 .fotorama__stage,
 .fotorama__nav {
-  overflow: hidden;
+  /*overflow: hidden;*/
   position: relative;
   max-width: 100%; }
 

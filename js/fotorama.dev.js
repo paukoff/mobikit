@@ -882,7 +882,7 @@ var $WINDOW = $(window),
       width: null, // 500 || '100%'
       minwidth: null,
       maxwidth: '100%', // '100%'
-      height: null,
+      height: '100%',
       minheight: '100%',
       maxheight: null,
 

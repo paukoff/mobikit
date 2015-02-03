@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="css/fotorama.dev.css">
 </head>
 <body>
+<div class="loader"></div>
 <div class="adaptive__panel">
 	<a href="#menu" class="menu-trigger glyphicon"></a>
 	<a href="#" class="logo_small"></a>  
@@ -30,11 +31,11 @@
 		</ul>
 		<nav >
 			<ul>
-				<li><a href="#">Портфолио</a></li>
-				<li><a href="#">Клиенты</a></li>
-				<li><a href="#">Заказать сайт</a></li>
-				<li><a href="#">Компания</a></li>
-				<li><a href="#">Контакты</a></li>
+				<li><a class="active" data-page="1" href="#">Портфолио</a></li>
+				<li><a data-page="2" href="#">Клиенты</a></li>
+				<li><a data-page="3" href="#">Заказать сайт</a></li>
+				<li><a data-page="4" href="#">Компания</a></li>
+				<li><a data-page="5" href="#">Контакты</a></li>
 			</ul>
 		</nav>
 		<div class="sidebar-bottom">
@@ -66,28 +67,28 @@
 				">
 		</div>
 	</section>
-	<section class="section slide_4">
+	<section class="section slide_4 animation__portfolio">
 		<div class="container-fluid">
 			<div class="row" id="mas-container">
-				<a href="#" class="col-xs-6 col-sm-6 mas__item column_h_50 column_w_50" data-original="img/porfolio_1.png" style="background-image: url()"></a>
-				<a href="#" class="col-xs-6 col-sm-3 mas__item column_h_25 column_w_25" data-original="img/porfolio_6.png" style="background-image: url()"></a>
-				<a href="#" class="col-xs-6 col-sm-3 mas__item column_h_25 column_w_25" data-original="img/porfolio_8.png" style="background-image: url()"></a>
-				<a href="#" class="col-xs-6 col-sm-3 mas__item column_h_25 column_w_25" data-original="img/porfolio_2.png" style="background-image: url()"></a>
-				<a href="#" class="col-xs-6 col-sm-3 mas__item column_h_50 column_w_25" data-original="img/porfolio_4.png" style="background-image: url()"></a>
-				<a href="#" class="col-xs-6 col-sm-3 mas__item column_h_25 column_w_25" data-original="img/porfolio_2.png" style="background-image: url()"></a>
-				<a href="#" class="col-xs-6 col-sm-3 mas__item column_h_25 column_w_25" data-original="img/porfolio_7.png" style="background-image: url()"></a>
-				<a href="#" class="col-xs-6 col-sm-6 mas__item column_h_25 column_w_50" data-original="img/porfolio_3.png" style="background-image: url()"></a>
-				<a href="#" class="col-xs-6 col-sm-3 mas__item column_h_25 column_w_25" data-original="img/porfolio_5.png" style="background-image: url()"></a>
-				<a href="#" class="col-xs-6 col-sm-3 mas__item column_h_25 column_w_25" data-original="img/porfolio_6.png" style="background-image: url()"></a>
-				<a href="#" class="col-xs-6 col-sm-3 mas__item column_h_25 column_w_25" data-original="img/porfolio_2.png" style="background-image: url()"></a>
-				<a href="#" class="col-xs-6 col-sm-3 mas__item mas__item-hidden column_h_25 column_w_25" data-original="img/porfolio_2.png" style="background-image: url()"></a>
-				<a href="#" class="col-xs-6 col-sm-3 mas__item mas__item-hidden column_h_25 column_w_25" data-original="img/porfolio_5.png" style="background-image: url()"></a>
-				<a href="#" class="col-xs-6 col-sm-3 mas__item mas__item-hidden column_h_25 column_w_25" data-original="img/porfolio_6.png" style="background-image: url()"></a>
-				<a href="#" class="col-xs-6 col-sm-3 mas__item mas__item-hidden column_h_25 column_w_25" data-original="img/porfolio_7.png" style="background-image: url()"></a>
-				<a href="#" class="col-xs-6 col-sm-3 mas__item mas__item-hidden2000 column_h_25 column_w_25" data-original="img/porfolio_2.png" style="background-image: url()"></a>
-				<a href="#" class="col-xs-6 col-sm-3 mas__item mas__item-hidden2000 column_h_25 column_w_25" data-original="img/porfolio_5.png" style="background-image: url()"></a>
-				<a href="#" class="col-xs-6 col-sm-3 mas__item mas__item-hidden2000 column_h_25 column_w_25" data-original="img/porfolio_6.png" style="background-image: url()"></a>
-				<a href="#" class="col-xs-6 col-sm-3 mas__item mas__item-hidden2000 column_h_25 column_w_25" data-original="img/porfolio_7.png" style="background-image: url()"></a>
+				<a href="#" class="mas__item-1 col-xs-6 col-sm-6 mas__item column_h_50 column_w_50" data-original="img/porfolio_1.png" style="background-image: url()"></a>
+				<a href="#" class="mas__item-2 col-xs-6 col-sm-3 mas__item column_h_25 column_w_25" data-original="img/porfolio_6.png" style="background-image: url()"></a>
+				<a href="#" class="mas__item-3 col-xs-6 col-sm-3 mas__item column_h_25 column_w_25" data-original="img/porfolio_8.png" style="background-image: url()"></a>
+				<a href="#" class="mas__item-4 col-xs-6 col-sm-3 mas__item column_h_25 column_w_25" data-original="img/porfolio_2.png" style="background-image: url()"></a>
+				<a href="#" class="mas__item-5 col-xs-6 col-sm-3 mas__item column_h_50 column_w_25" data-original="img/porfolio_4.png" style="background-image: url()"></a>
+				<a href="#" class="mas__item-6 col-xs-6 col-sm-3 mas__item column_h_25 column_w_25" data-original="img/porfolio_2.png" style="background-image: url()"></a>
+				<a href="#" class="mas__item-7 col-xs-6 col-sm-3 mas__item column_h_25 column_w_25" data-original="img/porfolio_7.png" style="background-image: url()"></a>
+				<a href="#" class="mas__item-8 col-xs-6 col-sm-6 mas__item column_h_25 column_w_50" data-original="img/porfolio_3.png" style="background-image: url()"></a>
+				<a href="#" class="mas__item-9 col-xs-6 col-sm-3 mas__item column_h_25 column_w_25" data-original="img/porfolio_5.png" style="background-image: url()"></a>
+				<a href="#" class="mas__item-10 col-xs-6 col-sm-3 mas__item column_h_25 column_w_25" data-original="img/porfolio_6.png" style="background-image: url()"></a>
+				<a href="#" class="mas__item-11 col-xs-6 col-sm-3 mas__item column_h_25 column_w_25" data-original="img/porfolio_2.png" style="background-image: url()"></a>
+				<a href="#" class="mas__item-12 col-xs-6 col-sm-3 mas__item mas__item-hidden column_h_25 column_w_25" data-original="img/porfolio_2.png" style="background-image: url()"></a>
+				<a href="#" class="mas__item-13 col-xs-6 col-sm-3 mas__item mas__item-hidden column_h_25 column_w_25" data-original="img/porfolio_5.png" style="background-image: url()"></a>
+				<a href="#" class="mas__item-14 col-xs-6 col-sm-3 mas__item mas__item-hidden column_h_25 column_w_25" data-original="img/porfolio_6.png" style="background-image: url()"></a>
+				<a href="#" class="mas__item-15 col-xs-6 col-sm-3 mas__item mas__item-hidden column_h_25 column_w_25" data-original="img/porfolio_7.png" style="background-image: url()"></a>
+				<a href="#" class="mas__item-16 col-xs-6 col-sm-3 mas__item mas__item-hidden2000 column_h_25 column_w_25" data-original="img/porfolio_2.png" style="background-image: url()"></a>
+				<a href="#" class="mas__item-17 col-xs-6 col-sm-3 mas__item mas__item-hidden2000 column_h_25 column_w_25" data-original="img/porfolio_5.png" style="background-image: url()"></a>
+				<a href="#" class="mas__item-18 col-xs-6 col-sm-3 mas__item mas__item-hidden2000 column_h_25 column_w_25" data-original="img/porfolio_6.png" style="background-image: url()"></a>
+				<a href="#" class="mas__item-19 col-xs-6 col-sm-3 mas__item mas__item-hidden2000 column_h_25 column_w_25" data-original="img/porfolio_7.png" style="background-image: url()"></a>
 			</div>
 		</div>
 	</section>
@@ -289,10 +290,22 @@
 </div>
 		</div>
 	</section>
+	<section class="slide_5 section">
+		<div id="gmap" style="height:100%"></div>
+		<div class="contacts__box">
+			<div class="contacts">
+				<span class="contacts__phone">+7 495 269-00-99</span>
+				<span class="contacts__adress">123290, Москва, 1-й Магистральный тупик, 5А, офис 128</span>
+				<a href="mailto:info@mobikit.ru">info@mobikit.ru</a>
+			</div>
+		</div>
+	</section>
 </div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script type="text/javascript" src="http://maps.google.com/maps?file=api&v=2&key=AIzaSyBer5ZjW7k0KPpcEI4vsVGVz9DAufHBF9A"></script>
 	<script src="js/jquery.fullPage.js"></script>
+	<script src="js/jquery.gmap-1.1.0-min.js"></script>
 	<script src="js/fotorama.dev.js"></script>
 	<script src="js/bootstrap-slider.js"></script>
 	<script src="js/portfolio.js"></script>
@@ -300,23 +313,8 @@
 	<script src="js/jquery.jpanelmenu.js"></script>
 	<script src="js/masonry.pkgd.min.js"></script>
 	<script src="js/jquery.lazyload.js"></script>
-	<script src="js/dragdealer.js"></script>
 	<script type="text/javascript">
-var slideToUnlockNew = new Dragdealer('fullpagess', {
-    //x: 0,
-    steps: 6,
-    loose: true,
-    vertical: true,
-    horizontal: false,
-    speed: 0.3,
-    animationCallback: function(x, y) {
-      // Only 0 and 1 are the possible values because of "steps: 2"
 
-      if(y>0) {
-      	//$.fn.fullpage.moveSectionDown();
-      }
-    }
-  });
 
 
 	$(function() {
@@ -334,7 +332,7 @@ var slideToUnlockNew = new Dragdealer('fullpagess', {
 		function initialization(){
 			
 			$('#fullpage').fullpage({
-				anchors: ['firstPage', 'secondPage', '3rdPage', '4rdPage'],
+				anchors: ['firstPage', 'secondPage', '3rdPage', '4rdPage', '5rdPage'],
 				navigation: false,
 				navigationPosition: 'right',
 				navigationTooltips: ['First page', 'Second page', 'Third and last page'],
@@ -349,9 +347,16 @@ var slideToUnlockNew = new Dragdealer('fullpagess', {
 						$('.slide_2').addClass('load_anim').removeClass('load_anim_h');
 					}
 					$(".mas__item, .klients > div").trigger("sporty");
+					$('nav ul li a').removeClass('active');
+					active_nav = $('[data-page='+index+']').addClass('active');
 				},
 			});
 		};
+		$('nav ul li a').on('click', function(e) {
+			data_slide = $(this).data('page');
+			e.preventDefault();
+			$.fn.fullpage.moveTo(data_slide);
+		});
 		initialization();
 		$(function () {
 		  $('.fotorama').fotorama();
@@ -392,12 +397,46 @@ var slideToUnlockNew = new Dragdealer('fullpagess', {
 		});
 
 		var container = document.querySelector('#mas-container');
+
 		var msnry = new Masonry( container, {
 		  // Настройки
 		  columnWidth: '.column_w_25',
 		  itemSelector: '.mas__item',
-		  singleMode: false
 		});
+
+
+		$(window).resize(function() {
+			timer = '';
+			clearTimeout(timer);
+			$('.slide_4').removeClass('animation__portfolio');
+			timer = setTimeout(function(){  // заводим таймер
+		        $('.slide_4').addClass('animation__portfolio');
+		    }, 2000);       // время = 2 сек
+
+		});
+
+		$(window).load(function() {
+    		$("#gmap").gMap({ 
+
+                  scrollwheel: false,
+                  markers: [{ latitude: 55.76610708,
+                              longitude: 37.53225391,
+                              icon: { image: "img/map_ico.png",
+                                      iconsize: [46, 64],
+                                      iconanchor: [12,46],
+                                      infowindowanchor: [12, 0] } }],
+                  icon: { image: "img/map_ico.png", 
+                          iconsize: [46, 64],
+                          iconanchor: [12, 46],
+                          infowindowanchor: [12, 0] },
+                  latitude: 55.76610708,
+                  longitude: 37.53225391,
+                  zoom: 16 
+            });
+	});
+	$(window).load(function() {
+		$('.loader').fadeOut();
+	})	
 	</script>
 </body>
 </html>
