@@ -31,10 +31,10 @@
 		</ul>
 		<nav >
 			<ul>
-				<li><a class="active" data-page="1" href="#">Портфолио</a></li>
-				<li><a data-page="2" href="#">Клиенты</a></li>
-				<li><a data-page="3" href="#">Заказать сайт</a></li>
-				<li><a data-page="4" href="#">Компания</a></li>
+				<li><a class="" data-page="2" href="#">Портфолио</a></li>
+				<li><a data-page="3" href="#">Клиенты</a></li>
+				<li><a data-page="4" href="#">Заказать сайт</a></li>
+				<li><a data-page="" href="#">Компания</a></li>
 				<li><a data-page="5" href="#">Контакты</a></li>
 			</ul>
 		</nav>
@@ -52,7 +52,7 @@
 
 <div id="fullpage" class="">
 	<section class="slide_1 section">
-		<div class="fotorama" data-auto="false" data-width="100%" data-max-height="100%" data-fit="cover" data-transition="crossfade">
+		<div class="fotorama" data-autoplay="true" data-width="100%" data-max-height="100%" data-fit="cover" data-transition="crossfade">
 			<img src="img/slide_1.jpg" 
 				data-caption="
 					<span class='slide-title'>Viasat</span>
@@ -222,7 +222,10 @@
     	<form class="brief brief--1" novalidate action="/brief" method="post">
     		<div class="brief-step brief-step--1">
                 <div class="label-box row">
-                    <label class="active col-xs-6 col-sm-3 col-sm-offset-3">
+                	<div class="col-xs-12 col-sm-1 col-sm-offset-2">
+                		<h4 class="slider__title">Вам нужен</h4>
+                	</div>
+                    <label class="active col-xs-6 col-sm-3">
                         <input checked hidden class="brief__checkbox" type="radio" name="f1" value="company">
                         <div class="brief__site  brief__site--biz active">
                             <span class="brief__site__title">Сайт компании</span>
@@ -357,6 +360,9 @@
 			e.preventDefault();
 			$.fn.fullpage.moveTo(data_slide);
 		});
+		$('.logo__desctop').on('click', function() {
+			$.fn.fullpage.moveTo(1);
+		})
 		initialization();
 		$(function () {
 		  $('.fotorama').fotorama();
@@ -430,7 +436,7 @@
                           iconanchor: [12, 46],
                           infowindowanchor: [12, 0] },
                   latitude: 55.76610708,
-                  longitude: 37.53225391,
+                  longitude: 37.53025391,
                   zoom: 16 
             });
 	});

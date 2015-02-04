@@ -30,8 +30,7 @@ aside {
 	opacity: 0.95;
 }
 aside>img {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 10% 0;
 }
 .site_description {
     display: block;
@@ -46,6 +45,7 @@ aside>img {
   margin: 20px 0;
   padding: 0;
 }
+
 nav ul {
   margin: 0;
   padding: 0;
@@ -60,6 +60,10 @@ nav ul li a {
   display: inline-block;
   transition: all .3s;
 }
+nav ul li a:focus {
+  color: #fff;
+  text-decoration: none;
+}
 nav ul li a.active {
   color: #F3733A;
   text-decoration: none;
@@ -68,7 +72,9 @@ nav ul li a:hover {
   color: #F3733A;
   text-decoration: none;
 }
-
+.logo__desctop {
+  cursor: pointer;
+}
 .sidebar-bottom {
   position: absolute;
   left: 0;
@@ -123,14 +129,21 @@ nav ul li a:hover {
 .fotorama__nav-wrap {
 	position: absolute;
 
-	bottom: 20px;
+	bottom: 50px;
 	right: 0px;
 	z-index: 9;
+}
+.fotorama__nav__shaft {
+  width: 100%!important;
+  text-align: right!important;
+  float: right!important;
+  padding-right: 50px;
 }
 .fotorama__caption {
 	position: absolute;
 	left: 50%!important;
-	top: 30%;
+	top: 50%;
+  margin-top: -85px;
     width: 650px;
     margin-left: -185px;
     bottom: auto;
@@ -147,8 +160,18 @@ nav ul li a:hover {
 .fotorama__nav__frame {
   height: 20px!important;
   width: 20px!important;
-  position: absolute!important;
-  background: #000!important;
+  margin-left: 15px!important;
+}
+.fotorama__dot {
+  border: 2px solid #FFFFFF!important;
+  border-radius: 50%!important;
+  display: block;
+  height: 100%!important;
+  width: 100%!important;
+  top: 0!important;
+}
+.fotorama__active .fotorama__dot {
+  background: #FBB646!important;
 }
 .slide-title {
     font-family: 'appetite-italic';
@@ -340,6 +363,11 @@ nav ul li a:hover {
   color: #fff;
   font-family: "FreeSetLightC";
   z-index: 22;
+}
+.klient_4 .klient-hover__body > span,
+.klient_10 .klient-hover__body > span,
+.klient_16 .klient-hover__body > span {
+  color: #000!important;
 }
 .klient-hover__title {
   font-size: 20px;
@@ -664,6 +692,13 @@ display: none;
 .label-box {
     text-align: center;
     margin-bottom: 3%;
+}
+.label-box .slider__title {
+  text-align: left;
+}
+.label-box .col-sm-1 {
+  padding-right: 0;
+  padding-top: 40px;
 }
 .slider__box {
     margin-bottom: 6%;
@@ -1085,6 +1120,23 @@ display: none;
     width: 40%!important;
   }
 }
+@media (min-height: 790px) {
+  nav {
+    margin-top: 20%;
+  }
+  .sidebar-bottom__adress {
+    margin: 10% 0;
+  }
+  .sidebar-bottom__socials {
+    margin: 10% 0;
+  }
+  .sidebar-bottom {
+    padding-top: 90px;
+  }
+  .slide_3 h2 {
+    margin-top: 8%;
+  }
+}
 @media (min-width: 2000px) {
   .mas__item-hidden2000 {
     display: block;
@@ -1327,13 +1379,52 @@ display: none;
     .column_h_25 {
       height: 175px;
     }
-
+    #gmap {
+      height: 600px!important;
+    }
+    .contacts__box {
+      padding-left: 25px;
+    }
+    .brief__button_f {
+      margin: 60px auto!important;
+      position: relative;
+      top: 30px;
+    }
 }
 @media (max-width: 400px) {
    .label-box  .brief__site {
       -webkit-background-size: contain;
       background-size: contain;
       padding-top: 130px;
-      padding-right: 20px;
+
     }
+    .brief__site__title {
+      padding-right: 0;
+    }
+}
+@media (min-width: 350px) and (max-width: 1000px) {
+   .mas__item {
+    width: 50%!important;
+    height: 175px!important;
+   }
+}
+@media (max-width: 349px) {
+   .mas__item {
+      width: 100%!important;
+      height: 175px!important;
+   }
+}
+@media (max-width: 450px) {
+   .contacts__phone {
+      font-size: 26px;
+   }
+   .contacts__adress {
+    font-size: 14px;
+   }
+   .contacts a {
+    font-size: 25px;
+   }
+   .slider__title {
+    margin-top: 40px;
+   }
 }
